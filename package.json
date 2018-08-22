@@ -1,0 +1,36 @@
+{
+	"name": "stylelint-formatter-simplest",
+	"version": "1.0.0",
+	"description": "A stylelint formatter to just identify whether there's any warnings or not",
+	"repository": "shinnn/stylelint-formatter-simplest",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "ISC",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"stylelint",
+		"formatter",
+		"stylelint-formatter",
+		"custom-formatter",
+		"simple",
+		"simplest",
+		"identify",
+		"differentiate",
+		"exclamation"
+	],
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^6.0.0",
+		"eslint": "^5.4.0",
+		"nyc": "^13.0.1",
+		"stylelint": "^9.5.0",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node"
+	}
+}
